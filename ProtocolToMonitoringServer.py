@@ -1,7 +1,7 @@
 import requests, time, os
 
 
-def request_to_monitoring_servers(ips: list):
+def http_to_server(ips: list):
     for ip in ips:
         ip: str = ip.strip()
         for _ in range(30):
